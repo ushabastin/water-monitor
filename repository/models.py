@@ -4,7 +4,7 @@ from django.utils import timezone
 
 
 class Nodename(models.Model):
-    title = models.CharField(max_length=200, default='Node')
+    title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField('Start Date',
             default=timezone.now)
