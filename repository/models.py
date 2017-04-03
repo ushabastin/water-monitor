@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Nodename(models.Model):
     title = models.CharField(max_length=200)
-    text = models.TextField()
+    text = models.CharField(max_length=500)
     created_date = models.DateTimeField('Start Date',
             default=timezone.now)
     published_date = models.DateTimeField('Last updated on', default=timezone.now)
